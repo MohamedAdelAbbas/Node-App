@@ -1,0 +1,9 @@
+/node_modules
+Dockerfile
+docker-compose*
+.env
+passphrase.txt
+logs/
+.git
+*.md
+.cache
