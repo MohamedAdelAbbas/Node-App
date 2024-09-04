@@ -1,1 +1,1 @@
-# Node-App
+# Dockerizing a Node.js application
