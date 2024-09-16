@@ -4,9 +4,11 @@ WORKDIR /app
 
 COPY package.json .
 
-RUN npm install
-
-COPY /src/index.js .
+ARG NODE_ENV
+RUN if [ "$NODE_ENV" = "Production"];\
+        then npm install --only=Production;\
+        else npm install; \
+        fi
 
 COPY . .
 
